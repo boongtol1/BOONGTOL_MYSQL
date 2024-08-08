@@ -1,6 +1,6 @@
 -- CREATE 문으로 데이터베이스 생성
 CREATE DATABASE DoItSQL;
-show databases;
+show databases; 
 -- DROP 문으로 데이터베이스 삭제
 DROP DATABASE doitsql;
 
