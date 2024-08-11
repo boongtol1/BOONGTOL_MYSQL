@@ -1,6 +1,12 @@
 -- CREATE 문으로 데이터베이스 생성
 CREATE DATABASE DoItSQL;
-show databases;
+--show DATABASES;
+
+--SHOW COLUMNS FROM doit_create_table;
+
+--SELECT * FROM doit_create_table;
+
+
 -- DROP 문으로 데이터베이스 삭제
 DROP DATABASE doitsql;
 
@@ -34,7 +40,13 @@ SELECT * FROM doit_dml
 INSERT INTO doit_dml(col_1) VALUES ('문자 입력');
 
 -- 열 이름 생략하고 데이터 삽입
-INSERT INTO doit_dml VALUES (2, '열 이름 생략', '2023-01-02');
+INSERT INTO doit_dml VALUES (NULL, NULL, '2023-01-02');
+
+-- 네, INSERT 명령어에서 열 이름을 생략할 수 있습니다. 그러나 두 가지 조건이 충족되어야 합니다:
+
+--모든 열에 값을 제공해야 합니다. 테이블에 정의된 모든 열의 값이 VALUES 절에 제공되어야 합니다. 예를 들어, doit_dml 테이블에 3개의 열이 정의되어 있다면, VALUES 절에도 3개의 값이 제공되어야 합니다.
+
+--값의 순서가 테이블 정의와 일치해야 합니다. 제공된 값들은 테이블에 정의된 열의 순서대로 삽입됩니다.
 
 -- 삽입된 데이터 확인
 SELECT * FROM doit_dml;
@@ -43,7 +55,7 @@ SELECT * FROM doit_dml;
 INSERT INTO doit_dml VALUES (3, 'col_3 값 생략');
 
 -- 특정 열에만 데이터 삽입
-INSERT INTO doit_dml(col_1, col_2) VALUES (3, 'col_3 값 생략');
+INSERT INTO doit_dml(col_1, col_2) VALUES (4, 'col_3 값 생략');
 
 -- 삽입할 데이터의 순서 변경
 INSERT INTO doit_dml(col_1, col_3, col_2) VALUES (4,'2023-01-03', '열순서 변경');
@@ -74,3 +86,7 @@ DELETE FROM doit_dml WHERE col_1 = 14;
 
 -- DELETE 문으로 테이블 전체 데이터 삭제
 DELETE FROM doit_dml;
+
+SELECT * FROM doit_dml;
+
+SELECT * FROM doit_dml WHERE col_1 = 4;
