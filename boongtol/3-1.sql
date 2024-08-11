@@ -1,5 +1,6 @@
 -- CREATE 문으로 데이터베이스 생성
 CREATE DATABASE DoItSQL;
+<<<<<<< HEAD
 --show DATABASES;
 
 --SHOW COLUMNS FROM doit_create_table;
@@ -7,6 +8,9 @@ CREATE DATABASE DoItSQL;
 --SELECT * FROM doit_create_table;
 
 
+=======
+show databases; 
+>>>>>>> febc49d567e0482c3194ad8f3145e7125766ae45
 -- DROP 문으로 데이터베이스 삭제
 DROP DATABASE doitsql;
 
