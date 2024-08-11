@@ -1,5 +1,6 @@
 -- CREATE 문으로 데이터베이스 생성
 CREATE DATABASE DoItSQL;
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 --show DATABASES;
 
@@ -11,6 +12,9 @@ CREATE DATABASE DoItSQL;
 =======
 show databases; 
 >>>>>>> febc49d567e0482c3194ad8f3145e7125766ae45
+=======
+ 
+>>>>>>> Stashed changes
 -- DROP 문으로 데이터베이스 삭제
 DROP DATABASE doitsql;
 
